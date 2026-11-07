@@ -1,0 +1,25 @@
+{
+  "name": "counter-strike-in-browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --port 5188 --strictPort",
+    "build": "vite build",
+    "build:pages": "vite build --base /counter-strike-in-browser/",
+    "preview": "vite preview --port 5189",
+    "build:wavedash": "vite build --mode wavedash --base ./ --outDir dist-wavedash"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.185.1",
+    "three-mesh-bvh": "^0.9.14"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0",
+    "vite": "^8.2.2"
+  },
+  "type": "module"
+}
